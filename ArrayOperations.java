@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.Random;           
 import java.util.Scanner;
 
 // 1.Generate an array of random integers in the range [0, 100]
@@ -39,6 +39,22 @@ public class ArrayOperations {
     // 5. Calculate and display the sum of elements at odd and even indexes
     public static void calculateSumOfIndexes(int[] array) {
 
+        //Assuming array has at least 2 elements and setting the sums to a default value '0'
+        int sumOfEven = 0;
+        int sumOfOdd = 0;
+
+        // If index is even it sums to sumOfEven and if it is not it sums to sumOfOdd
+        for (int i = 0; i < array.length; i++){
+            if ( i % 2 == 0){
+                sumOfEven += array[i];
+            } else {
+                sumOfOdd += array[i];
+            }
+        }
+
+        //Displaying the sums of odd and even indexes respectively 
+        System.out.println("Sum of the odd indexes is " + sumOfOdd);
+        System.out.println("Sum of the even indexes is " + sumOfEven);
       
     }
 
