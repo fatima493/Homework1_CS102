@@ -3,7 +3,7 @@ import java.util.Scanner;
 
     // 1. Generate an array of random integers in the range [0, 100]
     public class ArrayOperations {
-        int[] array = new int[size];
+        int[] array = new int[101];
         Random rand = new Random();
         for (int i = 0; i < size; i++) {
             array[i] = rand.nextInt(101); // random number between 0 and 100
