@@ -4,6 +4,7 @@ import java.util.Scanner;
 // 1.Generate an array of random integers in the range [0, 100]
 public class ArrayOperations {
 
+
  
     }
 
@@ -75,6 +76,6 @@ public class ArrayOperations {
     }
 
     // Display the menu and get the user input
-    public static void main(String[] args) {
+        // Implemented as controller.
+        
 
-}
