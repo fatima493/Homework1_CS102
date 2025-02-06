@@ -45,7 +45,7 @@ public class ArrayOperationsController {
         System.out.println("1.Find the minimum");
         System.out.println("2.Find the maximum");
         System.out.println("3.Find the average");
-        System.out.println("4.Find the sum of indexes");
+        System.out.println("4.Find the sum of indexes(Even & Odd numbers)");
         System.out.println("5.Exit");
 
         int option = Input(sc,1, 5, "Choose an option: ");
