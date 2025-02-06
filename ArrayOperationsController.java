@@ -11,9 +11,13 @@ public class ArrayOperationsController {
         
         //create an array
         int[] array = ArrayOperations.generateRandomArray(arraySize);
+        String arrayString = " ";
+        for(int i : array){
+            arrayString += i+" ";
+        }
         
         while(true){
-            switch (Menu(sc)) {
+            switch (Menu(sc, arrayString)) {
                  case 1:
                     System.out.println("Minimum value: " + ArrayOperations.findMin(array)); //Implement the created array
                     break;
@@ -35,8 +39,9 @@ public class ArrayOperationsController {
     }
 
     //Menu
-    public static int Menu(Scanner sc){
+    public static int Menu(Scanner sc, String arrayString){
         System.out.println("Menu");
+        System.out.println("Your Array: "+ arrayString);
         System.out.println("1.Find the minimum");
         System.out.println("2.Find the maximum");
         System.out.println("3.Find the average");
