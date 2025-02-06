@@ -14,17 +14,17 @@ public class ArrayOperationsController {
         
         while(true){
             switch (Menu(sc)) {
-                case 1:  
-                    ArrayOperations.findMin(array); //implement created array 
+                 case 1:
+                    System.out.println("Minimum value: " + ArrayOperations.findMin(array)); //Implement the created array
                     break;
                 case 2:
-                    ArrayOperations.findMax(array); //implement created array 
+                    System.out.println("Maximum value: " + ArrayOperations.findMax(array)); //Implement the created array
                     break;
                 case 3:
-                    ArrayOperations.calculateAverageAndDifferences(array); //implement created array 
+                    ArrayOperations.calculateAverageAndDifferences(array); //Implement the created array
                     break;
                 case 4:
-                    ArrayOperations.calculateSumOfIndexes(array); //implement created array 
+                    ArrayOperations.calculateSumOfIndexes(array); //Implement the created array
                     break;
                 case 5:
                     System.exit(1);
