@@ -9,21 +9,22 @@ public class ArrayOperationsController {
         //Ask user for the desired array size
         int arraySize = Input(sc, 2, 100, "Give an array size: ");
         
-        //create array
+        //create an array
+        int[] array = ArrayOperations.generateRandomArray(arraySize);
         
         while(true){
             switch (Menu(sc)) {
                 case 1:  
-                    ArrayOperations.findMin(null); //implement created array 
+                    ArrayOperations.findMin(array); //implement created array 
                     break;
                 case 2:
-                    ArrayOperations.findMax(null); //implement created array 
+                    ArrayOperations.findMax(array); //implement created array 
                     break;
                 case 3:
-                    ArrayOperations.calculateAverageAndDifferences(null); //implement created array 
+                    ArrayOperations.calculateAverageAndDifferences(array); //implement created array 
                     break;
                 case 4:
-                    ArrayOperations.calculateSumOfIndexes(null); //implement created array 
+                    ArrayOperations.calculateSumOfIndexes(array); //implement created array 
                     break;
                 case 5:
                     System.exit(1);
