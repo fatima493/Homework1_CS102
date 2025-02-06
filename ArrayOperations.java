@@ -9,12 +9,28 @@ public class ArrayOperations {
 
     // 2. Find the minimum value in the array
     public static int findMin(int[] array) {
-
+        //set the minimum value as a first number of the array
+        int min = array[0];
+        //compare the min value with other numbers and find the smaller one and set min value as that number
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
     }
 
     // 3. Find the maximum value in the array
     public static int findMax(int[] array) {
-
+        //set the maximum value as a first number of the array
+        int max = array[0];
+        //compare the max value with other numbers and find the bigger one and set max value as that number
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
     }
 
     // 4. Calculate and display the average, and differences from the average
