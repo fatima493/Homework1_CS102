@@ -43,6 +43,7 @@ public class ArrayOperationsController {
 
     //Menu function to present options and return to the given option
     public static int Menu(Scanner sc, String arrayString){
+        System.out.println("");
         System.out.println("Menu");
         System.out.println("Your Array:"+ arrayString);
         System.out.println("1.Find the minimum");
@@ -52,6 +53,7 @@ public class ArrayOperationsController {
         System.out.println("5.Exit");
 
         int option = Input(sc,1, 5, "Choose an option: ");
+        System.out.println("");
         return option;
     }
     
