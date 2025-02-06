@@ -46,7 +46,7 @@ import java.util.Scanner;
             sum += num;
         }
      // Find the average (I decided to convert sum into a double to get more precise results)
-        double average = (double)sum/array.length;
+        int average = sum/array.length;
         System.out.println("Average: " + average);
 
      // Difference of each number and average
@@ -78,7 +78,7 @@ import java.util.Scanner;
         System.out.println("Sum of the even indexes is " + sumOfEven);
       
     }
-
+}
     // Display the menu and get the user input
         // Implemented as controller.
         
