@@ -12,36 +12,39 @@ public class ArrayOperationsController {
         //create an array
         int[] array = ArrayOperations.generateRandomArray(arraySize);
         String arrayString = " ";
+        
+        //Converting array elements to string
         for(int i : array){
             arrayString += i+" ";
         }
         
+        //Calling methods in the arrayOperations class based on the input entered
         while(true){
             switch (Menu(sc, arrayString)) {
                  case 1:
-                    System.out.println("Minimum value: " + ArrayOperations.findMin(array)); //Implement the created array
+                    System.out.println("Minimum value: " + ArrayOperations.findMin(array)); //Minimum 
                     break;
                 case 2:
-                    System.out.println("Maximum value: " + ArrayOperations.findMax(array)); //Implement the created array
+                    System.out.println("Maximum value: " + ArrayOperations.findMax(array)); //Maximum
                     break;
                 case 3:
-                    ArrayOperations.calculateAverageAndDifferences(array); //Implement the created array
+                    ArrayOperations.calculateAverageAndDifferences(array); //Calculate Average And Differences
                     break;
                 case 4:
-                    ArrayOperations.calculateSumOfIndexes(array); //Implement the created array
+                    ArrayOperations.calculateSumOfIndexes(array); // Calculate Sum Of Indexes
                     break;
                 case 5:
-                    System.exit(1);
+                    System.exit(1); //Exiting from program
                     break;        
             }
         }
         
     }
 
-    //Menu
+    //Menu function to present options and return to the given option
     public static int Menu(Scanner sc, String arrayString){
         System.out.println("Menu");
-        System.out.println("Your Array: "+ arrayString);
+        System.out.println("Your Array:"+ arrayString);
         System.out.println("1.Find the minimum");
         System.out.println("2.Find the maximum");
         System.out.println("3.Find the average");
@@ -53,13 +56,19 @@ public class ArrayOperationsController {
     }
     
     
-    //Provides the errors for inputs.
+    //Provides the errors for inputs with specified input range
     public static int Input(Scanner sc, int minumumInput, int maximumInput, String question){
         int option;
         while(true){
+            
+            //Printing question if there is. 
             System.out.print(question);
+            
+            //Protection against different values than int
             if(sc.hasNextInt()){
                 option = sc.nextInt();
+                
+                //Implemeting range
                 if(option>=minumumInput && option<=maximumInput){
                     break;
                 }
