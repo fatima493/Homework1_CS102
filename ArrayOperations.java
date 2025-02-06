@@ -1,11 +1,14 @@
 import java.util.Random;           
 import java.util.Scanner;
 
-// 1.Generate an array of random integers in the range [0, 100]
-public class ArrayOperations {
-
-
- 
+    // 1. Generate an array of random integers in the range [0, 100]
+    public class ArrayOperations {
+        int[] array = new int[size];
+        Random rand = new Random();
+        for (int i = 0; i < size; i++) {
+            array[i] = rand.nextInt(101); // random number between 0 and 100
+        }
+        return array;
     }
 
     // 2. Find the minimum value in the array
